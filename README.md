@@ -8,9 +8,9 @@ ____
 
 Мы с вами сделаем:
 
-*шаблон при помощи Bootstrap
-*сайт на Django.
-*API на Django Rest Framework
-*Фронтенд на NuxtJS
+* шаблон при помощи Bootstrap
+* сайт на Django.
+* API на Django Rest Framework
+* Фронтенд на NuxtJS
 
 Желательно иметь минимальные знания по Python 3, JavaScript, HTML, CSS.
