@@ -14,3 +14,9 @@ ____
 * Фронтенд на NuxtJS
 
 Желательно иметь минимальные знания по Python 3, JavaScript, HTML, CSS.
+
+# Ошибки
+
+Для Django4
+ImportError: cannot import name 'ugettext_lazy' from 'django.utils.translation'
+В файле ./venv/lib/python3.8/site-packages/taggit_serializer/serializers.py замените строку from django.utils.translation import ugettext_lazy as _ на from django.utils.translation import gettext_lazy as _
