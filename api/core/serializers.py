@@ -3,7 +3,6 @@ from .models import Post, Comment
 from taggit_serializer.serializers import TagListSerializerField, TaggitSerializer
 from django.contrib.auth.models import User
 from taggit.models import Tag
-from django.contrib.auth.models import User
 
 
 class PostSerializer(TaggitSerializer, serializers.ModelSerializer):
@@ -70,7 +69,3 @@ class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
         fields = ("id", "post", "username", "text", "created_date")
-        lookup_field = 'id'
-        extra_kwargs = {
-            'url': {'lookup_field': 'id'}
-        }
